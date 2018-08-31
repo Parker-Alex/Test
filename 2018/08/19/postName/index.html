@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="题目：1给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。 解决思路：1==从数组的最后一==位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数">
+<meta name="description" content="题目：给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。 解决思路：从数组的最后一位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数组长度加1，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="postName">
 <meta property="og:url" content="http://yoursite.com/2018/08/19/postName/index.html">
 <meta property="og:site_name" content="Leo">
-<meta property="og:description" content="题目：1给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。 解决思路：1==从数组的最后一==位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数">
+<meta property="og:description" content="题目：给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。 解决思路：从数组的最后一位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数组长度加1，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-31T04:15:51.781Z">
+<meta property="og:updated_time" content="2018-08-31T04:18:29.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="postName">
-<meta name="twitter:description" content="题目：1给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。 解决思路：1==从数组的最后一==位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数">
+<meta name="twitter:description" content="题目：给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。 解决思路：从数组的最后一位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数组长度加1，">
 
 
 
@@ -299,9 +299,9 @@
       
 
       
-        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。</span><br></pre></td></tr></table></figure>
-<h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">==从数组的最后一==位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数组长度加1，然后将新数组的第一位设为1，最后返回该新数组。因为如果原来的数组的数全都大于等于9，那么加1后数组所有元素的值都为0，而新创建的数组的所有元素的值也都是默认为0的，与原来数组相同，所以只需要将新数组第一位设1便可得到结果。</span><br></pre></td></tr></table></figure>
-<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] plusOne(<span class="keyword">int</span>[] digits) &#123;</span><br><span class="line">        <span class="keyword">int</span> len = digits.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = len-<span class="number">1</span>; i&gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (digits[i] &lt; <span class="number">9</span>) &#123;</span><br><span class="line">                digits[i]++;</span><br><span class="line">                <span class="keyword">return</span> digits;</span><br><span class="line">            &#125;</span><br><span class="line">            digits[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[len+<span class="number">1</span>];</span><br><span class="line">        res[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><pre><code>给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。你可以假设除了整数 0 之外，这个整数不会以零开头。
+</code></pre><h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><pre><code>从数组的最后一位开始遍历，判断该数是否小于9。若小于，该数加1后返回数组；若大于等于9，将该数设为0，然后判断下一个数。若数组中所有数都大于等于9，循环遍历完后，创建一个新的数组，长度为原来数组长度加1，然后将新数组的第一位设为1，最后返回该新数组。因为如果原来的数组的数全都大于等于9，那么加1后数组所有元素的值都为0，而新创建的数组的所有元素的值也都是默认为0的，与原来数组相同，所以只需要将新数组第一位设1便可得到结果。
+</code></pre><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] plusOne(<span class="keyword">int</span>[] digits) &#123;</span><br><span class="line">        <span class="keyword">int</span> len = digits.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = len-<span class="number">1</span>; i&gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (digits[i] &lt; <span class="number">9</span>) &#123;</span><br><span class="line">                digits[i]++;</span><br><span class="line">                <span class="keyword">return</span> digits;</span><br><span class="line">            &#125;</span><br><span class="line">            digits[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[len+<span class="number">1</span>];</span><br><span class="line">        res[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -336,8 +336,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/28/测试/" rel="prev" title="MyErrors">
-                MyErrors <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/28/测试/" rel="prev" title="遇到的异常与错误">
+                遇到的异常与错误 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
